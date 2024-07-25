@@ -1,15 +1,15 @@
-function celToFahr(n) {
-   temp = ((n * 9.0 / 5.0) + 32);
+function celToFahr(tempCel) {
+   temp = ((tempCel * 9.0 / 5.0) + 32);
    return Math.round(temp)
 }
 
-const n = 21
-console.log(celToFahr(n))
+const tempCel = 21
+console.log(celToFahr(tempCel))
 
-function fahrToCel (v) {
-    newTemp = ((v - 32) / 1.8);
+function fahrToCel (tempFahr) {
+    newTemp = ((tempFahr - 32) / 1.8);
     return Math.round(newTemp)
 }
 
-const v = 80
-console.log(fahrToCel(v))
+const tempFahr = 80
+console.log(fahrToCel(tempFahr))
